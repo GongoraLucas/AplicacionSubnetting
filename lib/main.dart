@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'vistas/pantallas/login_pantalla.dart';
+import 'vistas/pantallas/inicio_pantalla.dart';
 
 void main() {
   runApp(const MiApp());
@@ -45,9 +47,11 @@ class MiApp extends StatelessWidget {
       // Definición de Rutas
       initialRoute: '/',
       routes: {
-        '/': (context) => const Placeholder(), // Cambiar PlaceHolder por Pantalla 1: Login (Encargado Persona 2/3)
-        '/calculadora': (context) => const Placeholder(), // Cambiar PlaceHolder por  Pantalla 2: Formulario Calculadora
-        '/resultado': (context) => const Placeholder(), // Cambiar PlaceHolder por  Pantalla 3: Resultado de la Red
+        '/': (context) => const LoginPantalla(),
+        '/inicio': (context) => const InicioPantalla(),
+        // Pendiente: conectar la pantalla de calculadora de la persona 2.
+        '/calculadora': (context) => const Placeholder(),
+        '/resultado': (context) => const Placeholder(),
       },
     );
   }
