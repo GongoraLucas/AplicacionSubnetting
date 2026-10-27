@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:subnetting/vistas/pantallas/subnet_pantalla.dart';
 import 'vistas/pantallas/login_pantalla.dart';
 import 'vistas/pantallas/inicio_pantalla.dart';
 
@@ -50,8 +51,7 @@ class MiApp extends StatelessWidget {
         '/': (context) => const LoginPantalla(),
         '/inicio': (context) => const InicioPantalla(),
         // Pendiente: conectar la pantalla de calculadora de la persona 2.
-        '/calculadora': (context) => const Placeholder(),
-        '/resultado': (context) => const Placeholder(),
+        '/calculadora': (context) => const SubnetPantalla(),
       },
     );
   }
